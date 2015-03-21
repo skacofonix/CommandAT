@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<ArrayOfCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Command>
+    <Name>SMONP</Name>
+    <Content>AT^SMONP</Content>
+    <EnableLoop>false</EnableLoop>
+    <NumberOfLoop>1</NumberOfLoop>
+    <DelayBetweenLoop>1000</DelayBetweenLoop>
+  </Command>
+  <Command>
+    <Name>SMONI</Name>
+    <Content>AT^SMONI</Content>
+    <EnableLoop>false</EnableLoop>
+    <NumberOfLoop>1</NumberOfLoop>
+    <DelayBetweenLoop>1000</DelayBetweenLoop>
+  </Command>
+  <Command>
+    <Name>COPS</Name>
+    <Content>AT+COPS=0,0</Content>
+    <EnableLoop>false</EnableLoop>
+    <NumberOfLoop>1</NumberOfLoop>
+    <DelayBetweenLoop>1000</DelayBetweenLoop>
+  </Command>
+  <Command>
+    <Name>=&gt; 2G</Name>
+    <Content>AT^SCFG="Radio/Band",15,1</Content>
+    <EnableLoop>false</EnableLoop>
+    <NumberOfLoop>1</NumberOfLoop>
+    <DelayBetweenLoop>1000</DelayBetweenLoop>
+  </Command>
+  <Command>
+    <Name>=&gt; 3G</Name>
+    <Content>AT^SCFG="Radio/Band",127,1</Content>
+    <EnableLoop>false</EnableLoop>
+    <NumberOfLoop>1</NumberOfLoop>
+    <DelayBetweenLoop>1000</DelayBetweenLoop>
+  </Command>
+</ArrayOfCommand>
